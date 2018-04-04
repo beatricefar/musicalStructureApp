@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ItemRootLayout">
+
+    <ImageView
+        android:id="@+id/album_cover"
+        style="@style/ItemAlbumCover"
+        android:contentDescription="@string/album_cover_image_decription"
+        android:src="@drawable/album_awesome_wave" />
+
+    <LinearLayout style="@style/WrapContent.ItemInformationLayout">
+
+        <TextView
+            android:id="@+id/artist"
+            style="@style/WrapContent.ListItemText"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/work_sans"
+            android:text="@string/artist_2" />
+
+        <TextView
+            android:id="@+id/song"
+            style="@style/WrapContent.ListItemText"
+            android:text="@string/song_2" />
+
+        <TextView
+            android:id="@+id/album"
+            style="@style/WrapContent.ListItemText"
+            android:text="@string/album_2" />
+
+    </LinearLayout>
+
+    <ImageView
+        style="@style/PlayButtonIcon"
+        android:contentDescription="@string/list_item_play_button"
+        android:src="@drawable/ic_play_arrow_black_24dp" />
+
+</RelativeLayout>
